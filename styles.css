@@ -1,0 +1,74 @@
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+.container{
+ height: 100vh;
+ background-color: blanchedalmond;
+ display: grid;
+ grid-template-columns: repeat(4,1fr);
+ /* grid-template-rows: repeat(4,1fr); */
+ 
+}
+/* sidebar */
+.sidebar{
+ background-color: dodgerblue;
+ grid-area: 1/1/5/2;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 35px;
+}
+.sidebar .title{
+ display: flex;
+ justify-content: flex-start;
+ align-items: center;
+ gap: 12px;
+ padding: 12px;
+ color: #ffffff;
+}
+.title-logo{
+ width: 36px;
+ height: 36px;
+ fill: currentColor;
+}
+.title>p{
+ font-size: 25px;
+}
+.nav-icon{
+ width: 24px;
+ height: 24px;
+ fill: currentColor;
+
+ /* BOLD CONTROLS */
+  stroke: currentColor;       /* Adds an outline of the same color */
+  stroke-width: 1px;        /* Start low (e.g., 1px to 1.5px). Too high will distort the shape */
+  paint-order: stroke fill;
+}
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  padding: 12px;
+  color: #ffffff;
+}
+.sidebar ul li:hover {
+  background-color: #f0f0f0;
+  color: #0066cc; /* Changes text color on hover */
+}
+
+
+/* header */
+.header{
+ background-color: azure;
+ grid-area: 1/2/2/5;
+
+}
+
+/* main-content */
+.main-content{
+ background-color: lightgray;
+ grid-area: 2/2/5/5;
+}
