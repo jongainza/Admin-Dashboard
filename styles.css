@@ -26,7 +26,7 @@
  justify-content: flex-start;
  align-items: center;
  gap: 12px;
- padding: 12px;
+ /* padding: 12px; */
  color: #ffffff;
 }
 .title-logo{
@@ -67,19 +67,24 @@
 .header{
  background-color: #ffffff;
  grid-area: 1/2/2/5;
- padding: 40px 20px;
+ padding:  20px;
  display: grid;
- grid-template-columns: repeat(2,1fr);
+ grid-template-columns: 2fr 1fr;
+ gap: 0 20px;
 
 }
 .search{
  display: flex;
- align-items: center;
+ 
+ padding: 20px;
  gap: 12px;
  grid-column: 1/2;
  
 }
 .search-logo{ 
+  
+  transform: translateY(10px);
+
  width: 24px;
  height: 24px;
  fill: currentColor;
@@ -87,6 +92,7 @@
  stroke: currentColor;
  stroke-width: 1px;
  paint-order: stroke fill;
+ 
 }
 .search-area{
  display: flex;
@@ -98,11 +104,12 @@
  height:30px;
  border-radius: 10px;
  text-align: right;
+ 
 
 }
 .notifications{
  grid-column: 2/3;
- background-color: bisque;
+ 
 }
 .welcome{
  grid-column: 1/2;
@@ -111,6 +118,37 @@
 .actions{
  grid-column: 2/3;
  background-color: chartreuse;
+}
+.notification-placement{
+  /* width: 80%; */
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 2fr;
+  justify-items: center;
+  align-items: center;
+  padding: 20px;
+  gap: 15px;
+}
+.icon-bell{
+width: 24px;
+ height: 24px;
+ fill: currentColor;
+
+ stroke: currentColor;
+ stroke-width: 1px;
+ paint-order: stroke fill;
+ justify-self: right;
+}
+.notification-placement img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  justify-self: center;
+}
+.notification-placement>p{
+  font-weight: bold;
+  font-size: 20px;
+  justify-self: left;
 }
 
 /* main-content */
