@@ -13,7 +13,8 @@
 }
 /* sidebar */
 .sidebar{
- background-color: dodgerblue;
+ padding: 40px 20px;
+ background-color: #0066cc;;
  grid-area: 1/1/5/2;
  display: flex;
  flex-direction: column;
@@ -35,6 +36,7 @@
 }
 .title>p{
  font-size: 25px;
+
 }
 .nav-icon{
  width: 24px;
@@ -55,16 +57,60 @@
   color: #ffffff;
 }
 .sidebar ul li:hover {
+ border-radius: 10px;
   background-color: #f0f0f0;
-  color: #0066cc; /* Changes text color on hover */
+  color: #0066cc; 
 }
 
 
 /* header */
 .header{
- background-color: azure;
+ background-color: #ffffff;
  grid-area: 1/2/2/5;
+ padding: 40px 20px;
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
 
+}
+.search{
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ grid-column: 1/2;
+ 
+}
+.search-logo{ 
+ width: 24px;
+ height: 24px;
+ fill: currentColor;
+
+ stroke: currentColor;
+ stroke-width: 1px;
+ paint-order: stroke fill;
+}
+.search-area{
+ display: flex;
+ align-items: center;
+ justify-content: right;
+ padding: 20px;
+ background-color: #eceaea;
+ width: 400px;
+ height:30px;
+ border-radius: 10px;
+ text-align: right;
+
+}
+.notifications{
+ grid-column: 2/3;
+ background-color: bisque;
+}
+.welcome{
+ grid-column: 1/2;
+ background-color: blueviolet;
+}
+.actions{
+ grid-column: 2/3;
+ background-color: chartreuse;
 }
 
 /* main-content */
